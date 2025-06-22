@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multiplication Table Generator</title>
+
+    <!-- jQuery and jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <!-- jQuery Validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap-theme.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Multiplication Table Generator</h1>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#input-tab">Input</a></li>
+            </ul>
+            
+            <div id="input-tab">
+                <form role="form" class="form-horizontal" id="inputForm">
+                    <div class="form-group">
+                        <label for="startMultiplier">Start Multiplier: </label>
+                        <input type="number" class="form-control" id="startMultiplier" name="startMultiplier" placeholder="Enter a number -50 to 50">
+                        <div id="startMultiplierSlider" class="slider mt-2"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endMultiplier">End Multiplier: </label>
+                        <input type="number" class="form-control" id="endMultiplier" name="endMultiplier" placeholder="Enter a number -50 to 50">
+                        <div id="endMultiplierSlider" class="slider mt-2"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="startMultiplicand">Start Multiplicand: </label>
+                        <input type="number" class="form-control" id="startMultiplicand" name="startMultiplicand" placeholder="Enter a number -50 to 50">
+                        <div id="startMultiplicandSlider" class="slider mt-2"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endMultiplicand">End Multiplicand: </label>
+                        <input type="number" class="form-control" id="endMultiplicand" name="endMultiplicand" placeholder="Enter a number -50 to 50">
+                        <div id="endMultiplicandSlider" class="slider mt-2"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Table</button>
+                </form>
+            </div>
+        </div><button id="deleteSelected" class="btn btn-primary mt-2">Delete Selected Tables</button>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

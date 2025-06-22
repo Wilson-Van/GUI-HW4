@@ -1,0 +1,80 @@
+h1 {
+    padding: 25px;
+}
+body {
+    background: beige;
+}
+label {
+    color: rgb(16, 90, 40);
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+}
+input {
+    padding: 5px;
+}
+.slider {
+    margin: 10px 0;
+}
+#tabs {
+    margin-top: 20px;
+}
+.ui-tabs .ui-tabs-nav li {
+    position: relative;
+    padding-right: 20px;
+}
+.ui-icon-close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+#deleteAll {
+    margin-top: 10px;
+}
+.tab-content {
+    padding: 15px;
+    overflow-x: auto;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+tr {
+    background-color: grey;
+}
+tr:nth-child(2n) {
+    background-color: black;
+}
+td {
+    color: white;
+}
+#multiplicandColumn,
+#multiplierRow {
+    background-color: white;
+}
+
+.tab-checkbox {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.ui-tabs .ui-tabs-nav li .ui-icon-close {
+    position: static;
+    margin-top: 0;
+    margin-left: 5px;
+}
